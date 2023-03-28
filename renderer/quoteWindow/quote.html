@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>POWER VIZ</title>
+    <link rel="stylesheet" href="quote.css">
+  </head>
+
+  <body>
+    <img id="close-window" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/close-icon.png" alt="Close Window">
+    <div id="quote"></div>
+    <div><button id="set-reminder">Set Reminder</button></div>
+
+    <div id="modal">
+      <div><img id="close-modal" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/close-icon.png" alt="Close Window"></div>
+      <div>
+        <fieldset>
+          <legend>Choose a type of reminder for the day</legend>
+          <div>
+            <input type="radio" id="type1" name="type" value="intervals" checked>
+            <label for="intervals">Fixed Interval Reminders</label>
+          </div>  
+          <div>
+            <input type="radio" id="type2" name="type" value="random">
+            <label for="random">Random Reminders</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <p>Number of reminders:</p>
+        <input type="number" id="times" placeholder="1" value="1">
+      </div>
+      
+      <div id="intervals">
+        <div>
+          <p>Frequency of reminders: Every</p>
+          <input type="number" id="freq" placeholder="30" value="30"><span>mins</span>
+        </div>
+      </div>
+
+      <div id="random">
+        <div>
+          <span>Stop sending reminders at: </span>
+          <input class="time" type="time" id="end-time" min="00:01" max="23:59" value="18:00">
+        </div>
+      </div>
+      
+      <span id="errors"></span>
+      <div><p>Reminders will be set starting from now.</p></div>
+
+      <div><button id="save-reminder">Set Reminder</button></div>
+    </div>
+  
+    <script>
+      require('./quote.js')
+    </script>
+  </body>
+</html>
