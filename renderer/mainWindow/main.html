@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>POWER VIZ</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="top-frame"></div>
+      <div id="title">POWER VIZ</div>
+      <div id="window-functions">
+        <img id="minimize-app" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/minimize-win.png" alt="Minimize">
+        <img id="close-app" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/close-icon.png" alt="Close Window">
+      </div>
+      
+      <div class="main-button">
+        <div><button id="show-viz">Show Quote of the Day</button></div>
+        <div><button id="new-quote">Add New Quote</button></div>
+        <div><button id="help">Help</button></div>
+      </div>
+      <div id="status-text">
+        <span id="reminder-status"></span>
+        <button id="stop-reminder">Stop Reminder</button>
+      </div>
+  
+      <div id="modal">
+        <img id="close-modal" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/close-icon.png" alt="Close Window">
+        <div>Enter new quote to add to the list:</div>
+        <textarea id="quote-to-add" value=""></textarea>
+        <div><button id="add-quote">Add Quote</button></div>
+      </div>
+
+      <div id="help-modal">
+        <img id="close-help" src="C:/Users/fanny.balestrat/Documents/Fanny/Projects/PowerViz/assets/close-icon.png" alt="Close Window">
+        <div>
+            <p><b>POWER VIZ</b> is a visualization app which displays a daily quote with the possibility to set notifications to
+            be reminded of this quote. <br><br> You are the one who chooses the quotes to be displayed, based on your visualization 
+            goals and needs. <br><br> A daily quote is set for the day, and can't be changed until the following day. <br><br> 
+            Click on "Add New Quote" to add a quote to your list. <br><br> Click on "Show Quote of the Day" to view the quote and 
+            add reminders. Reminders can be sent randomly or regularly, depending on your preferences. <br><br> Do not close the app 
+            if you want to receive the notifications. </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      require('./app.js')
+    </script>
+  </body>
+</html>
